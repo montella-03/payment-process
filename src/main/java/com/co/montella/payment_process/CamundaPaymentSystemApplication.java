@@ -16,6 +16,7 @@ import java.util.Optional;
 @Deployment(resources = "classpath:process-payments.bpmn")
 public class CamundaPaymentSystemApplication implements CommandLineRunner {
 	private static final Logger log = LoggerFactory.getLogger(CamundaPaymentSystemApplication.class);
+
 	private final ZeebeClient client;
 
     public CamundaPaymentSystemApplication(ZeebeClient client) {

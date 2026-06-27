@@ -16,7 +16,7 @@ public class ChargeCreditWorker {
 
     @JobWorker(type = "charge-credit-card")
     public Map<String, Double> chargeCreditCard(@Variable(name = "totalWithTax") Double totalWithTax) {
-        log.info("ChargeCreditWorker called{}", totalWithTax);
+        log.info("======ChargeCreditWorker called{}=====", totalWithTax);
 
         BigDecimal total = new BigDecimal(totalWithTax);
 
